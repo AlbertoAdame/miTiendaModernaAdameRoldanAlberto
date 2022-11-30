@@ -1,0 +1,225 @@
+{
+	"info": {
+		"_postman_id": "895d911d-7f79-4649-b5a3-ad80c0936fe3",
+		"name": "Pruebas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24467025"
+	},
+	"item": [
+		{
+			"name": "listaMateriales",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ConstruccionesGonzalez/listaMateriales",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ConstruccionesGonzalez",
+						"listaMateriales"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RegisterMaterial",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ConstruccionesGonzalez/RegisterMaterial.jsp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ConstruccionesGonzalez",
+						"RegisterMaterial.jsp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addUsuario",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ConstruccionesGonzalez/addUsuario.jsp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ConstruccionesGonzalez",
+						"addUsuario.jsp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addMaterial",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "loginSinParams",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ConstruccionesGonzalez/listaMateriales",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ConstruccionesGonzalez",
+						"listaMateriales"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addMaterialParamsNoValidos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ConstruccionesGonzalez/addMaterial.jsp?codigo=1&name=asd&description=asd&price=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ConstruccionesGonzalez",
+						"addMaterial.jsp"
+					],
+					"query": [
+						{
+							"key": "codigo",
+							"value": "1"
+						},
+						{
+							"key": "name",
+							"value": "asd"
+						},
+						{
+							"key": "description",
+							"value": "asd"
+						},
+						{
+							"key": "price",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addUsuarioParamNoValidos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "?usuario=pepemel&password=Jose&fecha=2002-01-01&genero=Masculino",
+					"query": [
+						{
+							"key": "usuario",
+							"value": "pepemel"
+						},
+						{
+							"key": "password",
+							"value": "Jose"
+						},
+						{
+							"key": "fecha",
+							"value": "2002-01-01"
+						},
+						{
+							"key": "genero",
+							"value": "Masculino"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "loginConParams",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ConstruccionesGonzalez/listaMateriales?password=Gonzalez&usuario=null",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ConstruccionesGonzalez",
+						"listaMateriales"
+					],
+					"query": [
+						{
+							"key": "password",
+							"value": "Gonzalez"
+						},
+						{
+							"key": "usuario",
+							"value": "null"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "loginConParamsValidos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ConstruccionesGonzalez/login?password=Gonzalez&usuario=Antonio",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ConstruccionesGonzalez",
+						"login"
+					],
+					"query": [
+						{
+							"key": "password",
+							"value": "Gonzalez"
+						},
+						{
+							"key": "usuario",
+							"value": "Antonio"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

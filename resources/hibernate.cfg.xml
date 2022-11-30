@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+ <session-factory name="">
+  <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+  <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/tiendaVirtual?useSSL=false&amp;serverTimezone=Europe/Madrid</property>
+  <property name="hibernate.connection.password">Antonio</property>
+  <property name="hibernate.dialect">org.hibernate.dialect.MySQLInnoDBDialect</property>
+  <property name="hibernate.show_sql">true</property>
+  <property name="hibernate.format_sql">true</property>
+  <property name="hibernate.connection.username">Gonzalez</property>
+  <mapping class="com.jacaranda.Model.Usuario"/>
+  <mapping class="com.jacaranda.Model.Material"/>
+  <mapping class="com.jacaranda.Model.Categoria"/>
+  <mapping class="com.jacaranda.Model.UsuarioMaterial"/> 
+ </session-factory>
+</hibernate-configuration>

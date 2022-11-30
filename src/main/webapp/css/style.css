@@ -1,0 +1,108 @@
+.header-container{
+	display: grid;
+	height:15%;
+    margin: 0%;
+    grid-template-columns: 0.5fr 2fr 0.5fr;
+    grid-template-areas:
+    "foto titulo login";
+}
+
+.header-container button {
+    color: red;
+}
+
+.foto {
+	display: grid;
+    grid-area: foto;
+    margin:0%;
+}
+
+.foto button {
+	font-size: 20px;
+	border-style: groove;
+    border-color: grey;
+    
+}
+
+.foto button:hover, .login button:hover, tr td button:hover{
+	background-color: black;
+	color: white;
+}
+
+tr td button{
+	width:100%;
+	height:100%;
+	margin:0%;
+	padding:0%;
+	border-style: groove;
+    border-color: grey;
+}
+
+.titulo {
+	display: grid;
+    grid-area: titulo;
+    margin: 0%;
+}
+
+.login {
+	display: grid;
+    grid-area: login;
+}
+
+.login img, .login img, .login button{
+    font-size: 20px;
+    border-style: groove;
+    border-color: grey;
+    margin-top: 5px
+}
+
+.login img {
+	width: 90%;
+	height: 80%;
+}
+
+.login button a{
+	text-decoration: none;
+}
+
+.container-wrap{
+	align-content: center;
+	text-align: center;
+}
+
+.container-wrap h1{
+	background-color: rgb(255, 115, 115);
+	border-style: solid;
+	border-radius: 10px;
+}
+
+table {
+	width: 90%;
+	border-radius: 15px;
+	text-align: center;
+}
+
+th {
+	background-color:black;
+	color:white;
+	text-decoration: underline;
+	border-style: solid;
+	border-radius: 10px;
+}
+
+tr {
+	border-width: thin;
+	border-style: solid;
+}
+
+td{
+	padding: 4px;
+	background-color: rgb(255, 115, 115);
+	border-radius: 10px;
+	font-size: 20px;
+}
+
+td:hover{
+	color: white;
+	background-color: red;
+}
